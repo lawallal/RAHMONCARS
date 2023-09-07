@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHADE GLOW</title>
+    <!-- google search https://boxicons.com/, click on usage tab, scroll down to usage as a font se -->
+    <link
+      rel="stylesheet"
+      href="link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/skin-logo.png" />
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="head-nav">
+      <div class="logo">
+        <a href="index.html">SHADE GLOW</a>
+      </div>
+
+      <input type="checkbox" id="toggler" name="" />
+
+      <nav class="top-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonial.html">testimonial</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+      <!-- back to boxicons.com type menu on the search bar,  click the menu you want -->
+      <label for="toggler" class="open-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style="fill: rgba(0, 0, 0, 1); transform: msFilter"
+        >
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+      </label>
+    </div>
+    <!-- end header -->
+    <!-- start contact -->
+     <!-- redirect user to your website after submitting to Google sheets start -->
+    <script type="text/javascript">
+      var submitted =false;
+    </script>
+    
+    <iframe
+     name="hidden_iframe"
+    id="hidden_iframe" 
+    style="display:none"
+    onload="if(submitted){window.location='index.html';}"
+    ></iframe>
+      <!-- redirect user to your website after submitting to Google sheets end -->
+    
+    <section class="section-five">
+      <div class="contact-top">
+        <h3>CONTACT ME</h3>
+      </div>
+      <div class="container">
+        <div class="contact-bottom">
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSes_WGGU8DKh3oTPzAOkqazuXme8nMXx3D091kN4v6wEMqOqg/formResponse"
+            class="form"
+            method="post"
+            target="hidden_iframe"
+            onsubmit="submitted=true"
+          >
+            <input type="text" placeholder="Your Name" name="entry.480548927"/>
+            <input type="email" placeholder="Your Email" name="entry.1244756731"/>
+            <input type="text" placeholder="Subject" name="entry.846542484"/>
+            <textarea row="9" placeholder="Message"></textarea>
+            <input type="submit" class="btn" value="send Message" name="entry.83005472"/>
+          </form>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5087070176364!2d3.3922878741317435!3d6.4570429239338205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b147071b137%3A0x3d50bd83cea9949b!2s15%20Thomas%20St%2C%20Lagos%20Island%20102273%2C%20Lagos!5e0!3m2!1sen!2sng!4v1693547942729!5m2!1sen!2sng"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start contact -->
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h2>SHADE GLOW</h2>
+          <p>We take pride in skin glowing.</p>
+        </div>
+
+        <nav class="bottom-nav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonial.html">testimonial</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p>&copy; copy right skin-care@2023</p>
+    </footer>
+  </body>
+</html>
